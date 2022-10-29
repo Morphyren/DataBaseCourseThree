@@ -8,7 +8,7 @@ import (
 
 // TODO:
 // 1. Посмотреть видео SQL in GO https://www.youtube.com/watch?v=INn0jtSOMco&list=PL4wpCvLmqD_TKIAmEmu4piCGWJFvzxXKh&index=5
-// 2. Реализовать store.go (бес использования sqlx): ListPeople, GetPeopleByID
+// 2. Реализовать store.go (без использования sqlx): ListPeople, GetPeopleByID
 // 3. Познакомиться с https://github.com/golang-migrate/migrate
 // 4. И написать в store функцию, которая будет выполнять миграции при запуске приложения
 
