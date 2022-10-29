@@ -58,9 +58,10 @@ func (s *Store) ListPeople() ([]People, error) {
 
 	//count rows for slice
 	var cnty int
-	var err = s.conn.QueryRow(context.Background(), `SELECT COUNT(*) FROM people`).Scan(&cnty)
+	err := s.conn.QueryRow(context.Background(), `SELECT COUNT(*) FROM people`).Scan(&cnty)
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "some problem: %v\n", err)
+		return nil, nil
 	}
 
 	//data recording
